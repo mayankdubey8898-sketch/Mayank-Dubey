@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box model 2</title>
+    <style>
+        body{
+            margin:0px;
+            padding:0px;
+        
+        }
+        html,*{
+            margin:0px;
+            padding:0px;
+            box-sizing:border-box;
+        }
+        #main {
+          width:900px;
+          height:300px;
+          background-color: red;
+          margin:0 auto;
+          display: flex;
+
+        }
+        #left{
+            width:300px;
+            height:300px;
+            background-color: aqua;
+        }
+        #right {
+            width:580px;
+            height:300px;
+            background-color: blue;
+            margin-left:20px;
+        }
+        .rgt_box{
+            height:140px;
+            width:580px;
+            background-color:blueviolet ;
+        }
+        .rgt_box:nth-child(2){
+        margin-top:20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+    <div id="left"></div>
+
+
+    
+    <div id="right">
+
+    <div class="rgt_box"></div>
+    <div class="rgt_box"></div>
+    </div>
+    </div>
+</body>
+</html>

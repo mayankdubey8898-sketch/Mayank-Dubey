@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS selector</title>
+    <style>
+        /* #main p{
+            color:#ccc 
+        }
+        /* #inside p{
+            background-color:aqua;
+        }
+        #main > p {
+            background-color: blue;
+        } */
+        /* #main + p {
+            background-color: blueviolet;
+        } */
+         /* #main ~ p{
+            background-color:cadetblue;
+         } */
+         /* style for a special state of an element */
+         a:link{
+            text-decoration: none; font-size:20px;
+         }
+         a:hover{
+            color:chartreuse; font-size:25px;
+         }
+         a:active{
+            color:cornflowerblue;
+         }
+         /* a:visited{
+            color:black;
+         } */
+          #main .odd{
+            color:#F04;
+          }
+          #main p:nth-child(even){
+            color:rgb(164, 173, 41);
+          }
+            /* style for a specific part of an element (pseudo element) */
+            #main p::first-letter {
+                color:rgb(red, green, blue); font-size:30px;
+                }
+                #main p::first-line{
+                 background-color:aquamarine;
+                }
+                #main p::after{
+                    content:"read more";
+                    color:red;
+                    font-size:40px;
+                }
+    </style>
+</head>
+<body>
+    <!-- css combinators -->
+     <div id="main"> <!--block elements (non semantic)--> <!--div first-->
+        <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia quam nesciunt corporis hic iusto earum at, error aliquam sunt incidunt expedita repellat, ab quos dolorum dignissimos facere, ad laborum libero?
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos minus cumque alias quas, odio esse blanditiis tempore id. Est odit, dicta obcaecati dolorum culpa doloribus itaque officiis sequi odio delectus.
+        </p>
+        <p >
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium facilis placeat vero laborum provident. Quis saepe voluptatem quas vitae? Commodi ut, quisquam ab repellendus ducimus optio quaerat accusantium tenetur quae.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, ullam. Quis voluptatem at corrupti adipisci impedit numquam beatae non in deleniti magnam tenetur tempore exercitationem placeat, inventore porro rem tempora.
+        </p>
+        <div id="inside"><!--inside first-->
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae amet magnam quae. Nostrum vero, in, sit sunt iusto vitae perspiciatis illo odit omnis recusandae cupiditate, perferendis dignissimos repellat debitis praesentium.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae assumenda voluptas quod quo nostrum cumque, repellat debitis omnis culpa, nisi enim ratione blanditiis quis delectus eaque corrupti deleniti natus error.
+            </p>
+        </div><!--inside first end-->
+      </div><!-- div first end-->
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat voluptas vero ullam ipsa, facere quas officia laboriosam eos expedita voluptates non laborum eveniet ex magni harum qui, quos hic consequatur!
+      </p>
+    
+      <a href>visit my page</a>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab quos est nemo cupiditate illo perspiciatis ratione soluta molestiae, eius, ea odit aliquam voluptatem a aut tenetur voluptas exercitationem, nam nisi.
+      </p>
+    
+</body>
+</html>
