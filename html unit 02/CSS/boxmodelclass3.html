@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box model 3</title>
+    <style>
+        body{
+            margin:0px;
+            padding:0px;
+        }
+        html,*{
+            margin:0px;
+            padding:0px;
+            box-sizing:border-box;
+        }
+        #main{
+            width:400px;
+            height:900px;
+            background-color:#999;
+            margin:0px auto;
+            display:flex;
+        } 
+      #header{
+        height:100px;
+        width: 400px;
+        background-color:orange;
+     }
+     #nav{
+        height:100px;
+        width:400px;
+        background-color:blueviolet;
+   }
+   #main2{
+       height:540px;
+       width:400px;
+       background-color: skyblue;
+
+   }
+   #left{
+    height: 540px;
+    width:250px;
+    margin-right : 20px;
+   }
+   .lft_box{
+    height:250px;
+    width:250px
+   }
+   .lft_box:nth-child(1){
+    background-color: #999;
+   }
+   .lft_box:nth-child(2){
+    background-color:blue;
+    margin-top: 20px;
+   }
+   #right{
+     width:150px;
+     height:540px;
+     background-color: orange;
+   }
+   #footer{
+    height:100px;
+    width: 400px;
+   }
+   </style>
+</head>
+<body>
+    <div id="main">
+        <div id="header">header</div><br>
+        <div id="nav"> nav </div>
+        <div id="main2">
+            <div id="left">
+                <div class="lft_box"> section </div>
+                <div class="lft_box"> article</div>
+            </div>
+            <div id="right"> aside </div>
+        </div>
+        <div id="footer"> footer</div>
+    </div>
+    
+</body>
+</html>
