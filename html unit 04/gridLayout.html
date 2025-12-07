@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        body{
+            margin:0;
+            padding:0;
+            background-color: aqua;
+        }
+        html,*{
+            margin: 0;
+            padding:0;
+            box-sizing: border-box;
+        }
+
+        main{
+            width:1200px;
+            height:auto;
+            background-color:#ccc;
+            margin : auto;
+            display:grid;
+            /* grid-template-columns: 200px 300px 400px auto; */
+            /* grid-template-columns: repeat(4,1fr);   */
+             grid-template-rows:150px 80px 500px 200px ;
+            gap:20px;
+
+        }
+        #lft_rgt{
+            display:grid;
+            grid-template-columns:repeat(2,1fr);
+
+        }
+        p{
+            font-size:5vh;
+            /* font-size:2em; */
+        }
+        /* media query (applies on parent element) */
+        /* @media screen and (min-width:375px) and (max-width:768px){
+            main {
+                display:grid;
+                grid-template-columns:repeat(1,1fr);
+                gap:20px;
+                background-color: aquamarine;
+            }
+        } */
+    </style>
+</head>
+<body>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. A quia repellat cum ratione et assumenda minima quas modi neque sapiente, aliquid quo nesciunt sit blanditiis exercitationem hic provident quam ducimus.
+    </p>
+    <main>
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box" id="lft_rgt">3
+              <div class="lft">left</div>
+              <div class="rgt">right</div>
+        </div>
+
+        <div class="box">4</div>
+
+    </main>
+    
+</body>
+
+</html>
