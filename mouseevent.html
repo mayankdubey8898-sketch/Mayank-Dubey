@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse event</title>
+<style>
+    #box{
+    height : 300px;
+    width:300px;
+    background-color: aqua;
+    margin: 200px 0 0 100px;
+
+    }
+    #text{
+       height : 300px;
+    width:300px;
+    background-color: aqua;
+    margin: 200px 0 0 100px; 
+    }
+</style>
+<script>
+    function eventcall(){
+        alert("these are the mose event")
+    }
+    function section(){
+        alert("example of function 2")
+    }
+</script>
+</head>
+<body>
+    <div id="box" onclick="eventcall()"> box 1</div>
+    <div id="box" onclick="section()"> box 2</div>
+    <div id="box" onmouseover="section()"> box 3</div>
+    <div id="button"  onmouseout="section()"> button</div>
+    <div id="text" oncontextmenu="section()"> Mayank</div>
+    <div id="box" onmouseup="section()"> box 6</div>
+    <div id="box" onmousedown="section()"> box 7</div>
+    <!-- press krke relese krne pr hoga -->
+
+
+    <p></p>
+</body>
+</html>
