@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window event</title>
+</head>
+<body>
+    <button  onclick="openwindow()">open new window</button>
+    <button  onclick="closewindow()">close new window</button>
+    <button  onclick="movewindow()">move new window</button>
+</body>
+<script>
+    var a;
+    function openwindow(){
+    //    a= window.open("http://www.google.com","_parent","height=500px,left=300px,width=500px");
+       a= window.open(" "," ","height=500px,left=300px,width=500px");
+    }
+
+   
+    function closewindow(){
+       a.close();
+    }
+
+    function movewindow(){
+        //  a.moveTo(200,300);
+        a.moveBy(200,300)
+         a.focus();
+    }
+</script>
+</html>
