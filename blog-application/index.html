@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <h2>My Blog</h2>
+
+        <div>
+            <a href="#" onclick="showHome()">Home</a>
+            <a href="#" onclick="showLogin()">Login</a>
+            <a href="#" onclick="showRegister()">Register</a>
+            <a href="#" onclick="showDashboard()">Dashboard</a>
+        </div>
+    </nav>
+
+
+    <!-- Home -->
+    <div id="home" class="page">
+
+        <div class="hero">
+            <h1>Welcome to My Blog</h1>
+            <p>Share your ideas, thoughts and stories.</p>
+
+            <button onclick="showCreateBlog()">
+                Create Blog
+            </button>
+        </div>
+
+        <h2>Latest Blogs</h2>
+
+        <div id="blogList">
+
+            <div class="blog">
+                <h3>My First Blog</h3>
+                <p>Welcome to my first blog.</p>
+                <small>Technology</small>
+            </div>
+
+            <div class="blog">
+                <h3>Learning JavaScript</h3>
+                <p>JavaScript is fun and easy to learn.</p>
+                <small>Programming</small>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Login -->
+    <div id="login" class="page form-page">
+
+        <h2>Login</h2>
+
+        <input type="email" id="loginEmail"
+               placeholder="Enter Email">
+
+        <input type="password" id="loginPassword"
+               placeholder="Enter Password">
+
+        <button onclick="login()">Login</button>
+
+        <p>Don't have an account?
+            <a href="#" onclick="showRegister()">Register</a>
+        </p>
+
+    </div>
+
+
+    <!-- Register -->
+    <div id="register" class="page form-page">
+
+        <h2>Register</h2>
+
+        <input type="text" id="name"
+               placeholder="Enter Name">
+
+        <input type="email" id="email"
+               placeholder="Enter Email">
+
+        <input type="password" id="password"
+               placeholder="Enter Password">
+
+        <input type="password" id="confirmPassword"
+               placeholder="Confirm Password">
+
+        <button onclick="register()">Register</button>
+
+        <p>Already have an account?
+            <a href="#" onclick="showLogin()">Login</a>
+        </p>
+
+    </div>
+
+
+    <!-- Dashboard -->
+    <div id="dashboard" class="page">
+
+        <h2>My Dashboard</h2>
+
+        <button onclick="showCreateBlog()">
+            + Create New Blog
+        </button>
+
+        <div id="dashboardBlogs">
+
+            <div class="blog">
+                <h3>My First Blog</h3>
+                <p>This is my first blog.</p>
+                <button onclick="deleteBlog(this)">
+                    Delete
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Create Blog -->
+    <div id="createBlog" class="page form-page">
+
+        <h2>Create New Blog</h2>
+
+        <input type="text" id="blogTitle"
+               placeholder="Blog Title">
+
+        <input type="text" id="blogCategory"
+               placeholder="Category">
+
+        <textarea id="blogContent"
+                  placeholder="Write your blog..."></textarea>
+
+        <button onclick="createBlog()">
+            Publish Blog
+        </button>
+
+    </div>
+
+
+    <footer>
+        <p>©️ 2026 My Blog</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
