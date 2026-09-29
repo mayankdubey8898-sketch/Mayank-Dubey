@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ffffff;
+    min-height: 100vh;
+}
+
+
+/* =========================
+   TOP SECTION
+========================= */
+
+.top-section {
+
+    height: 337px;
+
+    background: linear-gradient(
+        135deg,
+        #08c7bd,
+        #5bdcd4
+    );
+
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+/* =========================
+   LOGO
+========================= */
+
+.logo-container {
+
+    margin-top: 105px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.logo-container img {
+
+    width: 245px;
+    height: auto;
+
+    object-fit: contain;
+}
+
+
+/* =========================
+   QUIZ CARD
+========================= */
+
+.quiz-card {
+
+    width: 475px;
+
+    min-height: 535px;
+
+    background: #ffffff;
+
+    position: absolute;
+
+    top: 230px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    border-radius: 10px;
+
+    padding: 27px 24px 25px;
+
+    box-shadow:
+        0px 4px 12px rgba(0, 0, 0, 0.18);
+}
+
+
+/* =========================
+   HEADING
+========================= */
+
+.quiz-card h2 {
+
+    text-align: center;
+
+    color: #777777;
+
+    font-size: 23px;
+
+    font-weight: 700;
+
+    margin-bottom: 28px;
+}
+
+
+/* =========================
+   FORM GROUP
+========================= */
+
+.form-group {
+
+    margin-bottom: 38px;
+}
+
+
+.form-group label {
+
+    display: block;
+
+    color: #777777;
+
+    font-size: 20px;
+
+    font-weight: 600;
+
+    margin-bottom: 15px;
+}
+
+
+/* =========================
+   INPUT
+========================= */
+
+.form-group input {
+
+    width: 100%;
+
+    height: 40px;
+
+    border: none;
+
+    border-bottom: 1px solid #888888;
+
+    outline: none;
+
+    font-size: 18px;
+
+    color: #555555;
+
+    padding: 0 2px;
+
+    background: transparent;
+}
+
+
+.form-group input::placeholder {
+
+    color: #777777;
+
+    opacity: 1;
+}
+
+
+.form-group input:focus {
+
+    border-bottom: 2px solid #08c7bd;
+}
+
+
+/* =========================
+   CONTINUE BUTTON
+========================= */
+
+.continue-btn {
+
+    width: 100%;
+
+    height: 60px;
+
+    border: none;
+
+    background: #08c7bd;
+
+    color: white;
+
+    font-size: 19px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+
+.continue-btn:hover {
+
+    background: #05b8ae;
+}
+
+
+.continue-btn:active {
+
+    transform: scale(0.99);
+}
+
+
+/* =========================
+   VERSION
+========================= */
+
+.version {
+
+    text-align: center;
+
+    color: #777777;
+
+    font-size: 17px;
+
+    margin-top: 17px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 600px) {
+
+    .top-section {
+
+        height: 280px;
+    }
+
+
+    .logo-container {
+
+        margin-top: 75px;
+    }
+
+
+    .logo-container img {
+
+        width: 200px;
+    }
+
+
+    .quiz-card {
+
+        width: calc(100% - 30px);
+
+        top: 190px;
+
+        padding: 25px 20px;
+    }
+
+
+    .quiz-card h2 {
+
+        font-size: 21px;
+    }
+
+
+    .form-group label {
+
+        font-size: 18px;
+    }
+
+}
